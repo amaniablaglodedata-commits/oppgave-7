@@ -4,36 +4,39 @@
 
 body {
   margin: 0;
-  font-family: system-ui, sans-serif;
+  font-family: "Arapey", serif;
+  font-weight: 400;
+  font-style: normal;
   color: black;
-  background-color: white;
+  background-color: #fafafa;
+}
+
+/* Header */
+header {
+  background: #f6f2d8;
+  padding: 20px 40px;  
+  align-items: center;
 }
 
 nav {
+ display: flex;
+ gap: 20px;
+ font-size: 18px;
+ justify-content: space-between;
+}
+
+ul {
+  list-style: none;
   display: flex;
-  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 0.5rem;
-  gap: 0.5rem;
-  border-bottom: solid 1px #aaa;
-  background-color: #eee;
-}
-
-nav a {
-  display: inline-block;
-  min-width: 9rem;
-  padding: 0.5rem;
-  border-radius: 0.2rem;
-  border: solid 1px #aaa;
-  text-align: center;
-  text-decoration: none;
-  color: #555;
-}
-
-nav a[aria-current='page'] {
-  color: #000;
-  background-color: #d4d4d4;
+  gap: 10px;
 }
 
 main {
@@ -42,5 +45,81 @@ main {
 
 h1 {
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 55px;
+  color: #299D1E;
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: white;
 }
+
+.menu {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  list-style: none;
+  gap: 30px;
+  background-color: #FF7700;
+}
+
+.gallery {
+
+display: flex;
+  justify-content:center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 15px;
+}
+
+#fname {
+  width: 70px;
+  background-color: #FDDDDD;
+  
+}
+
+#iname {
+  width: 70px;
+  background-color: #E4DFDF;
+}
+
+#aname {
+  width:300px ;
+}
+
+.Search-box {
+  margin-top: 10px;
+}
+
+button {
+  background-color: #DA6161;
+}
+
+.divForm{
+  background-color: white;
+  height: 60px;
+}
+
+
+
+footer {
+  text-align: center;
+  padding: 15px;
+  font-size: 18px;
+}
+
+/* Phone */
+
+@media (max-width: 769px) {
+  .menu {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .gallery {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #aname {
+    width: 200px;
+  }
+}
+
